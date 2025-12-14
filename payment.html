@@ -1,12 +1,30 @@
-<h2>Payment</h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; background:#020617; color:white; text-align:center; }
+    .nav { background:#a855f7; padding:15px; }
+    button { width:80%; padding:12px; margin:10px; border-radius:8px; border:none; }
+  </style>
+</head>
+<body>
 
-<button onclick="done()">UPI</button><br><br>
-<button onclick="done()">Debit / Credit Card</button><br><br>
+<div class="nav">💳 Payment</div>
+<button onclick="back()">⬅ Back</button>
+
+<button onclick="done()">UPI</button>
+<button onclick="done()">Card</button>
 <button onclick="done()">Wallet</button>
 
 <script>
+function back(){ window.location.href="dashboard.html"; }
 function done(){
   alert("Payment Successful");
-  window.location.href = "dashboard.html";
+  window.location.href="dashboard.html";
 }
 </script>
+
+</body>
+</html>
