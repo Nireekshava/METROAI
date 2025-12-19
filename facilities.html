@@ -2,27 +2,30 @@
 <html>
 <head>
   <title>Facilities</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial; background:#020617; color:white; text-align:center; }
-    .nav { background:#ef4444; padding:15px; }
-  </style>
 </head>
 <body>
 
-<div class="nav">🚑 Medical & Water</div>
 <button onclick="back()">⬅ Back</button>
+<hr>
+
+<h2>Facilities</h2>
 
 <h3>Medical</h3>
-<p>✔ First Aid Available</p>
-<p>✔ Emergency Team</p>
+<ul>
+  <li>First Aid Available</li>
+  <li>Emergency Response Team</li>
+</ul>
 
 <h3>Water</h3>
-<p>✔ RO Drinking Water</p>
-<p>✔ Platform 1 & 2</p>
+<ul>
+  <li>RO Drinking Water</li>
+  <li>Platform 1 & 2</li>
+</ul>
 
 <script>
-function back(){ window.location.href="dashboard.html"; }
+function back(){
+  window.location.href = "dashboard.html";
+}
 </script>
 
 </body>
