@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crowd Status</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial; background:#020617; color:white; text-align:center; }
-    .nav { background:#facc15; padding:15px; color:black; }
-  </style>
+  <title>Live Crowd Status</title>
 </head>
 <body>
 
-<div class="nav">📊 Live Crowd Status</div>
 <button onclick="back()">⬅ Back</button>
+<hr>
 
-<h2 id="status"></h2>
+<h2>Live Crowd Status</h2>
+
+<p id="status"></p>
 
 <script>
-function back(){ window.location.href="dashboard.html"; }
-const data=["LOW 🟢","MODERATE 🟡","HIGH 🔴"];
+function back(){
+  window.location.href = "dashboard.html";
+}
+
+const data = ["LOW 🟢", "MODERATE 🟡", "HIGH 🔴"];
 document.getElementById("status").innerText =
-"Current Crowd: " + data[Math.floor(Math.random()*3)];
+  "Crowd Level: " + data[Math.floor(Math.random()*3)];
 </script>
 
 </body>
