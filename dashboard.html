@@ -2,26 +2,20 @@
 <html>
 <head>
   <title>Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial; background:#020617; color:white; text-align:center; }
-    .nav { background:#0ea5e9; padding:15px; font-size:20px; }
-    button { width:85%; padding:15px; margin:15px; border-radius:10px; border:none; font-size:16px; }
-    .btn { background:#22c55e; }
-    .logout { background:#ef4444; }
-  </style>
 </head>
 <body>
 
-<div class="nav">🚆 Smart Metro Dashboard</div>
+<h2>Dashboard</h2>
 
-<button class="btn" onclick="go('ticket.html')">🎟 Ticket Booking</button>
-<button class="btn" onclick="go('crowd.html')">📊 Live Crowd Status</button>
-<button class="btn" onclick="go('facilities.html')">🚑 Medical & Water</button>
-<button class="logout" onclick="go('index.html')">🚪 Logout</button>
+<button onclick="go('ticket.html')">Ticket Booking</button><br><br>
+<button onclick="go('crowd.html')">Live Crowd Status</button><br><br>
+<button onclick="go('facilities.html')">Medical & Water</button><br><br>
+<button onclick="go('index.html')">Logout</button>
 
 <script>
-function go(page){ window.location.href=page; }
+function go(page){
+  window.location.href = page;
+}
 </script>
 
 </body>
